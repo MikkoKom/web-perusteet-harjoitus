@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+  <div id="banner">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="./index.html">Etusivu</a></li>
+      <li><a href="./score.html">Laskuri</a></li>
+      <li><a href="./weather.html">Sää</a></li>
+    </ul>
+  </nav>
+  <input type="text" id="locationInput" placeholder="Enter a location">
+  <button id="fetchWeatherButton">Fetch Weather</button>
+  <div id="weatherInfo">
+      <p>Temperature: <span id="temp"></span></p>
+      <p>Wind speed: <span id="speed"></span></p>
+      <p>Description: <span id="description"></span></p>
+      <img id="weatherIcon" src="" alt="Weather Icon">
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./js/weather.js"></script>
+    
+</body>
+</html>
